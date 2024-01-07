@@ -1,0 +1,29 @@
+{
+  "name": "stackblitz-starters-f5g5bh",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@types/react": "18.2.47",
+    "@types/react-dom": "18.2.18",
+    "axios": "1.6.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.3.1",
+    "events": "^3.3.0",
+    "http": "^0.0.0",
+    "https": "^1.0.0",
+    "openai": "^4.24.1",
+    "react": "18.2.0",
+    "react-color": "^2.19.3",
+    "react-dom": "18.2.0",
+    "zlib": "^1.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}

@@ -1,0 +1,58 @@
+import React from 'react';
+
+interface TwitterHeaderProps {
+  title: string;
+  description: string;
+  cta: string;
+  imageUrl: string;
+}
+const TwitterHeader: React.FC<TwitterHeaderProps> = ({
+  title,
+  description,
+  cta,
+  imageUrl,
+}) => {
+  return (
+    <div
+      style={{
+        width: '750px', 
+        height: '250px',
+        border: '1px solid black',
+        margin: '10px',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        textAlign: 'center', 
+        backgroundImage: `url(${imageUrl})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        color: 'white',
+        padding: '20px', 
+        boxSizing: 'border-box',
+      }}
+    >
+      <h1
+        style={{
+          fontSize: '28px',
+          wordWrap: 'break-word',
+          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+        }}
+      >
+        {title}
+      </h1>
+      <p
+        style={{
+          fontSize: '14px',
+          wordWrap: 'break-word',
+          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', 
+        }}
+      >
+        {description}
+      </p>
+      <button>{cta}</button>
+    </div>
+  );
+};
+
+export default TwitterHeader;
